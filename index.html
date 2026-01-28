@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan K - Python Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Darshan K</div>
+        <ul class="nav-links">
+            <li><a href="#personal">Personal Info</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+
+            <div class="hero-left">
+                <img src="IMAGE2.jpeg" class="profile-pic" alt="Darshan K">
+            </div>
+
+            <div class="hero-right">
+                <h1 class="name-title">Darshan K</h1>
+                <h3 class="job-title">Python Developer</h3>
+
+                <p class="description">
+                    Hello! I am Darshan, A BE student in Artificial Intelligence & Machine Learning.
+                    I’m passionate about coding, improving myself every day, and building real-world
+                    projects in Python. My goal is to become a skilled Python Developer and contribute
+                    to impactful tech solutions.
+                </p>
+
+                <a href="#contact" class="btn">Connect With Me</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- PERSONAL INFORMATION -->
+    <section id="personal" class="section glass reveal personal">
+        <h2 class="section-heading">Personal Information</h2>
+        <div class="personal-list">
+            <p><strong>Name:</strong> Darshan K</p>
+            <p><strong>Email:</strong> DarshanKgowda22@gmail.com</p>
+            <p><strong>Phone:</strong> 6366002119</p>
+            <p><strong>Date of Birth:</strong> 22/09/2002</p>
+            <p><strong>Location:</strong> Bangalore, Karnataka</p>
+            <p><strong>Languages:</strong> Kannada, English</p>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section glass reveal education">
+        <h2 class="section-heading">Education</h2>
+        <div class="education-card">
+            <p><strong>Degree:</strong> Bachelor of Technology (AI & ML)</p>
+            <p><strong>University:</strong> Vivekananda University of Technology</p>
+            <p><strong>Year:</strong> 2022 – 2026</p>
+            <p><strong>CGPA:</strong> 8.5</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section glass reveal skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-list">
+            <p>• Python</p>
+            <p>• HTML / CSS</p>
+            <p>• JavaScript</p>
+            <p>• SQL</p>
+            <p>• Git & GitHub</p>
+            <p>• Problem Solving</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section glass reveal projects">
+        <h2 class="section-heading">Projects</h2>
+        <div class="project-card">
+            <h3>Fraud Mail Filter Engine</h3>
+            <p>
+                Developed an ML-based email classification system using Naive Bayes to detect spam emails
+                with high accuracy.
+            </p>
+            <a href="#" class="project-btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Title 2</h3>
+            <p><strong>Role:</strong> Full Stack Developer</p>
+            <p>Complete description with features, tech stack and purpose.</p>
+            <a href="#" class="project-btn">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section glass reveal contact">
+        <h2 class="section-heading big-heading">Contact Me</h2>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form" action="https://formsubmit.co/darshankgowda22@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+
+        <!-- SOCIAL LINKS -->e
+        <div class="social-links">
+            <a href="#" title="https://github.com/DarshanK239/Darshan-K.git"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/darshan-gowda-911567254" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/darxhan._._" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="Darshan K_Resume.docx" target="_blank" title="Resume"><i class="fas fa-file"></i></a>
+        </div>
+    </section>
+
+    <!-- SCROLL ANIMATION SCRIPT -->
+    <script>
+        function revealOnScroll() {
+            const elements = document.querySelectorAll(".reveal");
+
+            elements.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 120) {
+                    el.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+
+</body>
+</html>
